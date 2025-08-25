@@ -15,7 +15,7 @@ const QuestionForm = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:8000/ask", {
+      const res = await axios.post("https://anxhu2004-agentic-rag-backend.hf.space/ask", {
         question: input,
       });
       const botMessage = { type: "bot", text: res.data.answer };
