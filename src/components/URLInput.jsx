@@ -8,7 +8,7 @@ const URLInput = ({ onScrapeComplete }) => {
   const handleScrape = async () => {
     setLoading(true);
     try {
-      await axios.post("http://localhost:8000/scrape", { url });
+      await axios.post("https://anxhu2004-agentic-rag-backend.hf.space/scrape", { url });
       onScrapeComplete();
     } catch (err) {
       alert("Scraping failed. Check console.");
